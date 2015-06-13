@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57981C5F7ECA97210F742E1C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 433D295CBA300B4D251159F2 /* libPods.a */; };
 		A539C6031B2B4DB20017F814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A539C6021B2B4DB20017F814 /* main.m */; };
 		A539C6061B2B4DB20017F814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A539C6051B2B4DB20017F814 /* AppDelegate.m */; };
 		A539C6091B2B4DB20017F814 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A539C6081B2B4DB20017F814 /* ViewController.m */; };
@@ -24,6 +23,7 @@
 		A5CA45451B2C8A9C00EB1BAC /* infowindow.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CA45441B2C8A9C00EB1BAC /* infowindow.png */; };
 		A5CA45491B2C8C4200EB1BAC /* close-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CA45481B2C8C4200EB1BAC /* close-sm.png */; };
 		A5CA454D1B2C93F600EB1BAC /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CA454C1B2C93F600EB1BAC /* ListViewController.m */; };
+		A5CA454F1B2CD11A00EB1BAC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CA454E1B2CD11A00EB1BAC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +65,7 @@
 		A5CA45481B2C8C4200EB1BAC /* close-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-sm.png"; sourceTree = "<group>"; };
 		A5CA454B1B2C93F600EB1BAC /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		A5CA454C1B2C93F600EB1BAC /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		A5CA454E1B2CD11A00EB1BAC /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPods.a; sourceTree = "<group>"; };
 		BD96693137B7122CA4D04DEF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ED9D991D49527D08F6968C5A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,7 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A539C62B1B2B53F10017F814 /* CoreLocation.framework in Frameworks */,
-				57981C5F7ECA97210F742E1C /* libPods.a in Frameworks */,
+				A5CA454F1B2CD11A00EB1BAC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +102,7 @@
 		A539C5F41B2B4DB20017F814 = {
 			isa = PBXGroup;
 			children = (
+				A5CA454E1B2CD11A00EB1BAC /* libPods.a */,
 				A539C5FF1B2B4DB20017F814 /* ClickDeliveryTest */,
 				A539C6191B2B4DB20017F814 /* ClickDeliveryTestTests */,
 				A539C5FE1B2B4DB20017F814 /* Products */,
@@ -455,6 +457,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ClickDeliveryTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -466,6 +472,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ClickDeliveryTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
