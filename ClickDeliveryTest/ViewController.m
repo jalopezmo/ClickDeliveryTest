@@ -162,6 +162,7 @@
 }
 
 -(UIView*) mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
+    //We set every marker's info window to the custom one located in InfoWindow.xib
     CustomInfowindow *infoWindow = [[[NSBundle mainBundle] loadNibNamed:@"InfoWindow" owner:self options:nil] objectAtIndex:0];
     
     infoWindow.title.text = marker.title;
@@ -171,6 +172,7 @@
 }
 
 -(void)mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker {
+    //If the user clicked inside the marker's info window, we assume that it is because he wants to delete that destination from the array and delete it.
     for (int i = 0; i < self.destinations.count; i++) {
         Destination *current = [self.destinations objectAtIndex:i];
         
@@ -183,6 +185,7 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //We initialize the list view controller with the destinations the user has selected so far.
     if([[segue identifier] isEqualToString:@"destinations"]) {
         ListViewController *controller = (ListViewController *)segue.destinationViewController;
         controller.destinations = self.destinations;
@@ -190,6 +193,8 @@
 }
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    //If the user has no destinations selected, we show a message and avoid the segue
+    //that will take us to the next screen.
     if([identifier isEqualToString:@"destinations"]) {
         if(self.destinations.count == 0) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Elige algún destino" message:@"Antes de poder filtrar tus destinos, tienes que escoger por lo menos uno." delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
