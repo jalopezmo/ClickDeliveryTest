@@ -17,6 +17,13 @@
 		A539C61D1B2B4DB20017F814 /* ClickDeliveryTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A539C61C1B2B4DB20017F814 /* ClickDeliveryTestTests.m */; };
 		A539C6291B2B538B0017F814 /* JSONGet.m in Sources */ = {isa = PBXBuildFile; fileRef = A539C6281B2B538B0017F814 /* JSONGet.m */; };
 		A539C62B1B2B53F10017F814 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A539C62A1B2B53F10017F814 /* CoreLocation.framework */; };
+		A5CA45381B2BA2F100EB1BAC /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CA45371B2BA2F100EB1BAC /* Destination.m */; };
+		A5CA453A1B2C7E8A00EB1BAC /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CA45391B2C7E8A00EB1BAC /* InfoWindow.xib */; };
+		A5CA453D1B2C7FCA00EB1BAC /* CustomInfowindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CA453C1B2C7FCA00EB1BAC /* CustomInfowindow.m */; };
+		A5CA45411B2C889800EB1BAC /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CA45401B2C889800EB1BAC /* pin.png */; };
+		A5CA45451B2C8A9C00EB1BAC /* infowindow.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CA45441B2C8A9C00EB1BAC /* infowindow.png */; };
+		A5CA45491B2C8C4200EB1BAC /* close-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CA45481B2C8C4200EB1BAC /* close-sm.png */; };
+		A5CA454D1B2C93F600EB1BAC /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CA454C1B2C93F600EB1BAC /* ListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,16 @@
 		A539C6271B2B538B0017F814 /* JSONGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONGet.h; sourceTree = "<group>"; };
 		A539C6281B2B538B0017F814 /* JSONGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONGet.m; sourceTree = "<group>"; };
 		A539C62A1B2B53F10017F814 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A5CA45361B2BA2F100EB1BAC /* Destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Destination.h; sourceTree = "<group>"; };
+		A5CA45371B2BA2F100EB1BAC /* Destination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Destination.m; sourceTree = "<group>"; };
+		A5CA45391B2C7E8A00EB1BAC /* InfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoWindow.xib; sourceTree = "<group>"; };
+		A5CA453B1B2C7FCA00EB1BAC /* CustomInfowindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInfowindow.h; sourceTree = "<group>"; };
+		A5CA453C1B2C7FCA00EB1BAC /* CustomInfowindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInfowindow.m; sourceTree = "<group>"; };
+		A5CA45401B2C889800EB1BAC /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		A5CA45441B2C8A9C00EB1BAC /* infowindow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infowindow.png; sourceTree = "<group>"; };
+		A5CA45481B2C8C4200EB1BAC /* close-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-sm.png"; sourceTree = "<group>"; };
+		A5CA454B1B2C93F600EB1BAC /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		A5CA454C1B2C93F600EB1BAC /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		BD96693137B7122CA4D04DEF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ED9D991D49527D08F6968C5A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,12 +125,22 @@
 				A539C6051B2B4DB20017F814 /* AppDelegate.m */,
 				A539C6071B2B4DB20017F814 /* ViewController.h */,
 				A539C6081B2B4DB20017F814 /* ViewController.m */,
+				A5CA454B1B2C93F600EB1BAC /* ListViewController.h */,
+				A5CA454C1B2C93F600EB1BAC /* ListViewController.m */,
 				A539C6261B2B538B0017F814 /* JSONDelegate.h */,
 				A539C6271B2B538B0017F814 /* JSONGet.h */,
 				A539C6281B2B538B0017F814 /* JSONGet.m */,
+				A5CA453B1B2C7FCA00EB1BAC /* CustomInfowindow.h */,
+				A5CA453C1B2C7FCA00EB1BAC /* CustomInfowindow.m */,
+				A5CA45361B2BA2F100EB1BAC /* Destination.h */,
+				A5CA45371B2BA2F100EB1BAC /* Destination.m */,
+				A5CA45391B2C7E8A00EB1BAC /* InfoWindow.xib */,
+				A5CA45441B2C8A9C00EB1BAC /* infowindow.png */,
 				A539C60A1B2B4DB20017F814 /* Main.storyboard */,
 				A539C60D1B2B4DB20017F814 /* Images.xcassets */,
 				A539C60F1B2B4DB20017F814 /* LaunchScreen.xib */,
+				A5CA45481B2C8C4200EB1BAC /* close-sm.png */,
+				A5CA45401B2C889800EB1BAC /* pin.png */,
 				A539C6001B2B4DB20017F814 /* Supporting Files */,
 			);
 			path = ClickDeliveryTest;
@@ -238,7 +265,11 @@
 			files = (
 				A539C60C1B2B4DB20017F814 /* Main.storyboard in Resources */,
 				A539C6111B2B4DB20017F814 /* LaunchScreen.xib in Resources */,
+				A5CA45491B2C8C4200EB1BAC /* close-sm.png in Resources */,
 				A539C60E1B2B4DB20017F814 /* Images.xcassets in Resources */,
+				A5CA45411B2C889800EB1BAC /* pin.png in Resources */,
+				A5CA453A1B2C7E8A00EB1BAC /* InfoWindow.xib in Resources */,
+				A5CA45451B2C8A9C00EB1BAC /* infowindow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5CA45381B2BA2F100EB1BAC /* Destination.m in Sources */,
 				A539C6091B2B4DB20017F814 /* ViewController.m in Sources */,
+				A5CA454D1B2C93F600EB1BAC /* ListViewController.m in Sources */,
 				A539C6061B2B4DB20017F814 /* AppDelegate.m in Sources */,
 				A539C6291B2B538B0017F814 /* JSONGet.m in Sources */,
+				A5CA453D1B2C7FCA00EB1BAC /* CustomInfowindow.m in Sources */,
 				A539C6031B2B4DB20017F814 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

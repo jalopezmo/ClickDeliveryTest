@@ -14,6 +14,8 @@
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate, GMSMapViewDelegate, JSONDelegate>
 
+@property (strong, nonatomic) IBOutlet GMSMapView *mapView;
+
 @property (nonatomic,strong) CLLocationManager *locationManager;
 @property (nonatomic,strong) JSONGet *jsonGet;
 

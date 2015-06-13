@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomInfowindow">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infowindow.png" translatesAutoresizingMaskIntoConstraints="NO" id="tcQ-H3-PGU">
+                    <rect key="frame" x="0.0" y="0.0" width="224" height="150"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMg-Pn-Paw">
+                    <rect key="frame" x="40" y="82" width="145" height="30"/>
+                    <state key="normal" title="Borrar este destino">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otI-Vy-vJR">
+                    <rect key="frame" x="8" y="8" width="208" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quc-AZ-s7E">
+                    <rect key="frame" x="8" y="49" width="208" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="quc-AZ-s7E" firstAttribute="top" secondItem="otI-Vy-vJR" secondAttribute="bottom" constant="20" id="00d-jh-sfq"/>
+                <constraint firstItem="NMg-Pn-Paw" firstAttribute="top" secondItem="quc-AZ-s7E" secondAttribute="bottom" constant="12" id="9If-PA-0ri"/>
+                <constraint firstAttribute="trailing" secondItem="otI-Vy-vJR" secondAttribute="trailing" constant="8" id="CwR-GX-QJD"/>
+                <constraint firstItem="quc-AZ-s7E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Gdm-o2-quY"/>
+                <constraint firstItem="otI-Vy-vJR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Wbd-0g-FE0"/>
+                <constraint firstItem="otI-Vy-vJR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="nxV-Py-hVD"/>
+                <constraint firstAttribute="trailing" secondItem="NMg-Pn-Paw" secondAttribute="trailing" constant="39" id="sl5-O4-eOU"/>
+                <constraint firstItem="NMg-Pn-Paw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="v7y-tP-oyo"/>
+                <constraint firstAttribute="trailing" secondItem="quc-AZ-s7E" secondAttribute="trailing" constant="8" id="xmk-8z-JuP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descr" destination="quc-AZ-s7E" id="5Fg-NF-5qE"/>
+                <outlet property="title" destination="otI-Vy-vJR" id="OJl-cm-tfq"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="261"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="infowindow.png" width="224" height="150"/>
+    </resources>
+</document>
